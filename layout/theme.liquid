@@ -428,6 +428,136 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
+<!-- ============================================================
+  INSTRUCCIÓN: Pega este bloque JUSTO ANTES del cierre </head>
+  en tu archivo layout/theme.liquid
+============================================================ -->
+
+  <!-- PAKORA BRAND STYLES — DryStep Pro -->
+  <style>
+    /* === VARIABLES GLOBALES PAKORA === */
+    :root {
+      --pakora-navy:      #1B2A4A;
+      --pakora-gray:      #F4F4F5;
+      --pakora-blue:      #2563EB;
+      --pakora-orange:    #F97316;
+      --pakora-white:     #FFFFFF;
+      --pakora-text-sec:  #6B7280;
+      --pakora-danger:    #EF4444;
+    }
+
+    /* === TIPOGRAFÍA GLOBAL === */
+    body {
+      font-size: 1.5rem;
+      line-height: 1.7;
+      color: var(--pakora-navy);
+    }
+
+    @media (max-width: 749px) {
+      body { font-size: 1.5rem; }
+      h1, .h1 { font-size: 2.2rem; }
+      h2, .h2 { font-size: 1.9rem; }
+      h3, .h3 { font-size: 1.6rem; }
+    }
+
+    /* === BOTÓN CTA NARANJA (sobre fondos oscuros) === */
+    .pakora-btn-orange,
+    .pakora-btn-orange:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 52px;
+      background-color: var(--pakora-orange) !important;
+      color: var(--pakora-white) !important;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 0 2.4rem;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .pakora-btn-orange:hover {
+      background-color: #ea6c10 !important;
+      transform: translateY(-1px);
+    }
+    .pakora-btn-orange:active {
+      transform: translateY(0);
+    }
+
+    /* === BOTÓN CTA NAVY (sobre fondos naranjas) === */
+    .pakora-btn-navy,
+    .pakora-btn-navy:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 52px;
+      background-color: var(--pakora-navy) !important;
+      color: var(--pakora-white) !important;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 0 2.4rem;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .pakora-btn-navy:hover {
+      background-color: #142038 !important;
+      transform: translateY(-1px);
+    }
+
+    /* === TRUST BADGES TEXTO === */
+    .pakora-trust-text {
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      margin-top: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    /* === OVERRIDE BOTÓN ADD TO CART === */
+    .product-form__submit {
+      background-color: var(--pakora-orange) !important;
+      color: var(--pakora-white) !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.06em !important;
+      border-radius: 8px !important;
+      min-height: 52px !important;
+      font-size: 1.8rem !important;
+    }
+
+    /* === OVERRIDE SHOPIFY ACCENT COLORS === */
+    .button {
+      min-height: 48px;
+    }
+
+    /* === SECCIÓN PADDING BASE MOBILE === */
+    .pakora-section {
+      padding: 60px 20px;
+    }
+
+    @media (min-width: 750px) {
+      .pakora-section {
+        padding: 80px 40px;
+      }
+    }
+  </style>
+
+
   </head>
 
   <body class="gradient link-btns--{{ settings.link_btn_hover }} action-btns--{{ settings.action_btn_hover }}">

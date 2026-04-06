@@ -1,0 +1,133 @@
+<style>
+  .pakora-comparison {
+    background-color: #F4F4F5;
+    padding: 60px 20px;
+  }
+  .pakora-comparison__inner {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .pakora-comparison__heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1B2A4A;
+    margin: 0 0 32px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .pakora-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1.4rem;
+  }
+  .pakora-comparison-table thead tr th {
+    padding: 16px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    background: #FFFFFF;
+    color: #6B7280;
+    border-bottom: 2px solid #E5E7EB;
+  }
+  .pakora-comparison-table thead tr th.col-drystep {
+    background-color: #1B2A4A;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+  }
+  .pakora-comparison-table tbody tr {
+    border-bottom: 1px solid #E5E7EB;
+  }
+  .pakora-comparison-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .pakora-comparison-table tbody tr td {
+    padding: 14px 12px;
+    text-align: center;
+    vertical-align: middle;
+    background: #FFFFFF;
+    color: #1B2A4A;
+    font-size: 1.4rem;
+  }
+  .pakora-comparison-table tbody tr td.col-feature {
+    text-align: left;
+    font-weight: 600;
+    color: #1B2A4A;
+    background: #F9FAFB;
+  }
+  .pakora-comparison-table tbody tr td.col-drystep {
+    background-color: #EFF6FF;
+    border-left: 2px solid #1B2A4A;
+    border-right: 2px solid #1B2A4A;
+    font-weight: 700;
+  }
+  .pakora-comparison-table tbody tr:last-child td.col-drystep {
+    border-bottom: 2px solid #1B2A4A;
+  }
+  .check-yes { color: #16A34A; font-size: 1.8rem; font-weight: 700; }
+  .check-no  { color: #EF4444; font-size: 1.8rem; font-weight: 700; }
+  @media (min-width: 750px) {
+    .pakora-comparison { padding: 80px 40px; }
+    .pakora-comparison__heading { font-size: 2.8rem; }
+    .pakora-comparison-table { font-size: 1.6rem; }
+    .pakora-comparison-table thead tr th { font-size: 1.6rem; padding: 18px 16px; }
+    .pakora-comparison-table tbody tr td { padding: 16px; font-size: 1.5rem; }
+  }
+</style>
+
+<section class="pakora-comparison">
+  <div class="pakora-comparison__inner">
+    <h2 class="pakora-comparison__heading">DryStep Pro vs. los métodos que ya conoces</h2>
+    <table class="pakora-comparison-table">
+      <thead>
+        <tr>
+          <th style="text-align:left; min-width:140px;">Método</th>
+          <th class="col-drystep">DryStep Pro</th>
+          <th>Sol / Ventilador</th>
+          <th>Secador de cabello</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-feature">Seca uniformemente</td>
+          <td class="col-drystep"><span class="check-yes">✅</span></td>
+          <td><span class="check-no">❌</span></td>
+          <td><span class="check-no">❌</span></td>
+        </tr>
+        <tr>
+          <td class="col-feature">Elimina bacterias</td>
+          <td class="col-drystep"><span class="check-yes">✅</span></td>
+          <td><span class="check-no">❌</span></td>
+          <td><span class="check-no">❌</span></td>
+        </tr>
+        <tr>
+          <td class="col-feature">No daña el material</td>
+          <td class="col-drystep"><span class="check-yes">✅</span></td>
+          <td><span class="check-no">❌</span></td>
+          <td><span class="check-no">❌</span></td>
+        </tr>
+        <tr>
+          <td class="col-feature">Funciona de noche</td>
+          <td class="col-drystep"><span class="check-yes">✅</span></td>
+          <td><span class="check-no">❌</span></td>
+          <td><span class="check-yes">✅</span></td>
+        </tr>
+        <tr>
+          <td class="col-feature">Control de temperatura</td>
+          <td class="col-drystep"><span class="check-yes">✅</span></td>
+          <td><span class="check-no">❌</span></td>
+          <td><span class="check-no">❌</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pakora — Comparación",
+  "settings": [],
+  "presets": [{ "name": "Pakora — Comparación" }]
+}
+{% endschema %}

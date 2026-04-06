@@ -1,0 +1,106 @@
+<style>
+  .pakora-specs {
+    background-color: #F4F4F5;
+    padding: 60px 20px;
+  }
+  .pakora-specs__inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .pakora-specs__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1B2A4A;
+    margin: 0 0 32px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .pakora-specs__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid rgba(27, 42, 74, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #FFFFFF;
+  }
+  .pakora-specs__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(27, 42, 74, 0.08);
+    transition: background 0.15s;
+  }
+  .pakora-specs__item:last-child { border-bottom: none; }
+  .pakora-specs__item:hover { background: #F9FAFB; }
+  .pakora-specs__item-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 2.4rem;
+    text-align: center;
+  }
+  .pakora-specs__item-text {
+    font-size: 1.5rem;
+    color: #1B2A4A;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .pakora-specs__item-text strong {
+    color: #1B2A4A;
+    font-weight: 700;
+  }
+  @media (min-width: 750px) {
+    .pakora-specs { padding: 80px 40px; }
+    .pakora-specs__heading { font-size: 3rem; }
+    .pakora-specs__item-text { font-size: 1.65rem; }
+  }
+</style>
+
+<section class="pakora-specs">
+  <div class="pakora-specs__inner">
+    <h2 class="pakora-specs__heading">Lo que hay dentro de DryStep Pro</h2>
+    <ul class="pakora-specs__list">
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">⚡</span>
+        <p class="pakora-specs__item-text"><strong>Potencia:</strong> 200W — suficiente para secar rápido sin sobrecalentar</p>
+      </li>
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">🎛️</span>
+        <p class="pakora-specs__item-text"><strong>Control de temperatura:</strong> Dial ajustable con pantalla digital</p>
+      </li>
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">📐</span>
+        <p class="pakora-specs__item-text"><strong>Medidas:</strong> 24cm × 23cm × 17cm — cabe en cualquier closet</p>
+      </li>
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">🪶</span>
+        <p class="pakora-specs__item-text"><strong>Material:</strong> ABS de alta resistencia</p>
+      </li>
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">🎨</span>
+        <p class="pakora-specs__item-text"><strong>Color:</strong> Blanco — combina con cualquier espacio</p>
+      </li>
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">🔌</span>
+        <p class="pakora-specs__item-text"><strong>Alimentación:</strong> Cable eléctrico (incluido)</p>
+      </li>
+      <li class="pakora-specs__item">
+        <span class="pakora-specs__item-icon">📦</span>
+        <p class="pakora-specs__item-text"><strong>Incluye:</strong> Correa de transporte integrada</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pakora — Especificaciones",
+  "settings": [],
+  "presets": [{ "name": "Pakora — Especificaciones" }]
+}
+{% endschema %}

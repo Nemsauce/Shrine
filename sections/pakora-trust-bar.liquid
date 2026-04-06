@@ -1,0 +1,69 @@
+<style>
+  .pakora-trust-bar {
+    background-color: #2563EB;
+    padding: 28px 20px;
+  }
+  .pakora-trust-bar__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+  .pakora-trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pakora-trust-item__icon {
+    font-size: 2.8rem;
+    line-height: 1;
+    display: block;
+  }
+  .pakora-trust-item__label {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 8px 0 0;
+    line-height: 1.3;
+  }
+  @media (min-width: 750px) {
+    .pakora-trust-bar__inner {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .pakora-trust-bar {
+      padding: 32px 40px;
+    }
+    .pakora-trust-item__label { font-size: 1.5rem; }
+  }
+</style>
+
+<section class="pakora-trust-bar">
+  <div class="pakora-trust-bar__inner">
+    <div class="pakora-trust-item">
+      <span class="pakora-trust-item__icon">💨</span>
+      <p class="pakora-trust-item__label">Secado rápido</p>
+    </div>
+    <div class="pakora-trust-item">
+      <span class="pakora-trust-item__icon">🦠</span>
+      <p class="pakora-trust-item__label">Elimina bacterias</p>
+    </div>
+    <div class="pakora-trust-item">
+      <span class="pakora-trust-item__icon">📦</span>
+      <p class="pakora-trust-item__label">Diseño compacto</p>
+    </div>
+    <div class="pakora-trust-item">
+      <span class="pakora-trust-item__icon">🛡️</span>
+      <p class="pakora-trust-item__label">Garantía 30 días</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pakora — Trust Bar",
+  "settings": [],
+  "presets": [{ "name": "Pakora — Trust Bar" }]
+}
+{% endschema %}
